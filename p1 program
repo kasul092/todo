@@ -1,1 +1,4 @@
-
+def mypal():
+  print("python_programming")
+  
+pal()
