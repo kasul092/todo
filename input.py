@@ -22,7 +22,7 @@ s1 = stud.display(a, b, c, d)
 print("The Student Information is: ",s1)
 '''
 
-class teacher():
+class student():
 
     def stu1(self, name, familydetails, education, hobies):
         self.name = name
