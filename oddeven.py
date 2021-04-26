@@ -1,4 +1,4 @@
-class odd(:):
+class odd():
     
     def even(self, number):
         self.number = number
