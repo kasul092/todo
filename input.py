@@ -7,5 +7,4 @@ def task(n):
         if t2=="exit":
             break
         print("Task",i,":-",t2)
-        
 task(1000)
