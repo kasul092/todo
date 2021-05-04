@@ -1,10 +1,13 @@
 import click
+from operator import mul
+from functools import reduce 
 
 @click.command()
-@click.argument('name', default ='junior')
-@click.argument('age', type=int)
-def hello(name, age):
-    click.echo(f'I m {age} years old and my name is {name}')
+@click.argument('val', type = int, nargs=-1)
+def hello(val):
+    click.echo(f'The sum is {sum(val)}')
+    click.echo(f'The product is {reduce(mul, val, 1)}')
+
 
 if __name__=='__main__':
     hello()
