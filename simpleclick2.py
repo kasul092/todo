@@ -1,19 +1,16 @@
 import click
 
 @click.group()
-def messages():
+def cli():
     pass
 
-@click.command()
+@cli.command(name='gen')
 def generic():
     click.echo('Hello there')
 
-@click.command()
+@cli.command(name='wel')
 def welcome():
     click.echo('welcome')
-
-messages.add_command(generic)
-messages.add_command(welcome)
     
 if __name__=='__main__':
-    messages()
+    cli()
