@@ -1,13 +1,15 @@
 import click
 
 @click.command()
-@click.option('--blue', is_flag=True, help='message in blue colour')
-def hello(blue):
+@click.argument('word')
+@click.option('--shout/--no-shout', default=False, help='message in upper case')
+def hello(word, shout):
+    
 
-    if blue:
-        click.secho(f'hello there', fg='blue')
+    if shout:
+        click.secho(word.upper(), fg='yellow', bold=True)
     else:
-        click.secho(f'hello there')
-
+        click.secho(word, fg='yellow', bold=True)
+    
 if __name__=='__main__':
     hello()
