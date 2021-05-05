@@ -1,19 +1,19 @@
 import click
 
+@click.group()
+def messages():
+    pass
+
 @click.command()
-@click.argument('file_name', type=click.Path(exists=True))
-@click.argument('lines', default=-1, type=int)
-def hello(file_name, lines):
-    with open (file_name, 'r') as f:
-        counter=0   
+def generic():
+    click.echo('Hello there')
 
-        for line in file_name:
+@click.command()
+def welcome():
+    click.echo('welcome')
 
-            print(line.strip())
-            counter +=1
-
-            if counter == lines:
-                break 
+messages.add_command(generic)
+messages.add_command(welcome)
     
 if __name__=='__main__':
-    hello()
+    messages()
