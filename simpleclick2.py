@@ -1,9 +1,9 @@
 import click
 
 @click.command()
-@click.option('--data', required = True, type=(str, int))
-def hello(data):
-        click.echo(f'name={data[0]} age={data[1]}') 
+@click.option('--word','-w', multiple = True)
+def hello(word):
+        click.echo('\n'.join(word)) 
     
 if __name__=='__main__':
     hello()
