@@ -1,16 +1,22 @@
 import click
 
-@click.group()
-def cli():
-    pass
+@click.command()
+@click.argument('number1',type=int)
+@click.argument('number2',type=int)
+@click.argument('method', default='add')
 
-@cli.command(name='gen')
-def generic():
-    click.echo('Hello there')
+def main(number1, number2, method):
+    click.secho('the addition is:',fg='black', bg='white', bold=True)
+    method=number1 + number2
+    click.echo(method)
 
-@cli.command(name='wel')
-def welcome():
-    click.echo('welcome')
-    
+    click.secho('the subctration is:',fg='yellow', bg='red', bold=True)
+    method=number1 - number2
+    click.echo(method)
+
+    click.secho('the multiplication is:', fg='black', bg='white', bold=True)
+    method=number1 * number2
+    click.echo(method)
+
 if __name__=='__main__':
-    cli()
+    main()
