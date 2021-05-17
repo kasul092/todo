@@ -5,10 +5,13 @@ from todo import database
 
 @click.command()
 @click.option("--add", "-a", nargs = -1, help = "Add the tasks.")
+@click.option("--show", "-s", multiple = True , help = "Show all tasks.")
+@click.option("insert", nargs = 1)
 
 def main(
     insert,
-    add
+    add,
+    show
 ):
 
     if add:
@@ -19,5 +22,9 @@ def main(
                 is_task_added = database.DatabaseConnection.add_task()
                 if is_task_added:
                     print("Task added successfully")
+    
+    if show:
+        is_task_show = database.DatabaseConnection.show_task()
+
 
 sys.exit(0)
