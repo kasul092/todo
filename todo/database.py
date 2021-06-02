@@ -1,4 +1,5 @@
 import sqlite3
+from tabulate import tabulate
 
 class DatabaseConnection():
 
@@ -15,14 +16,18 @@ class DatabaseConnection():
         print("Table created.")
 
     def add_task(self, task):
+        self.task = task
         self.cur.execute(
             """INSERT INTO myroutine(task) VALUES(?)""",
-            (task))
+            (self.task,))
         self.con.commit()
+        print("task added successfully.")
 
-    def show_task(self, task):
+    def show_task(self):
         self.cur.execute(
             """SELECT * FROM myroutine""")
-        myroutine = self.cur.fetchall()
-        for task in myroutine:
-            print(task)
+        fat = self.cur.fetchall()
+        # for task in fat:
+        #     print(task)
+        s = tabulate(fat,headers= ['ID', 'Task'],tablefmt='fancy_grid')
+        print(s)

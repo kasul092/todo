@@ -5,6 +5,7 @@ from todo.task import show
 
 @click.group()
 def main():
+    ''''Todo Manager'''''
     pass
 
 main.add_command(add)
