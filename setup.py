@@ -5,7 +5,7 @@ with open("README.md") as readme_file:
 
 setup(
     name = "ToDo",
-    version = "0.0.9",
+    version = "0.1.0",
     description = "Todo manager tool",
     long_description = readme,
     url = "https://github.com/kasul092/todo",
