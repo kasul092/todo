@@ -39,3 +39,13 @@ class DatabaseConnection():
         self.con.commit()
         print("Task updated successfully.")
                   
+    def delete_task(self,t_id):
+        # self.task = task
+        self.t_id = t_id
+        self.cur.execute(
+            """DELETE FROM myroutine
+                WHERE t_id = ?""",
+                (self.t_id,))
+        self.con.commit()
+        print("Task deleted successfully.")
+                  
