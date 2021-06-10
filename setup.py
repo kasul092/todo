@@ -13,7 +13,7 @@ setup(
     author_email = "sumitpujari199723@gmail.com",
     packages = find_packages(include=["todo"]),
     python_requires ='>=3.6',
-    install_requires = ['click'],
+    install_requires = ['click', 'tabulate'],
     entry_points = {
         "console_scripts":[
             "todo=todo:main",
