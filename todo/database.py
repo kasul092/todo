@@ -40,7 +40,6 @@ class DatabaseConnection():
         print("Task updated successfully.")
                   
     def delete_task(self,t_id):
-        # self.task = task
         self.t_id = t_id
         self.cur.execute(
             """DELETE FROM myroutine

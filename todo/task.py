@@ -32,7 +32,6 @@ def update(update):
 @click.option("--delete","-d")
 def delete(delete):
     task_id = int(click.prompt("Enter task_id which you want to delete"))
-    # updated_task = click.prompt("Enter new task")
     dc.delete_task(t_id = task_id)
     
     
