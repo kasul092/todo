@@ -1,0 +1,10 @@
+Variables used in project ToDo
+
+1) t_id  = Task_id
+2) task = For Tasks
+3) add_task = Added the task in table.
+4) show_task = Show all the tasks which added in database.
+5) update_task = Update the exiting task with new one.
+6) delete_task = Delete tasks from database.
+7) con = connection
+8) cur = cursor
