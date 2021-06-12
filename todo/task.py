@@ -24,14 +24,14 @@ def show(show):
 @click.command(help = "Update the task.")
 @click.option("--update","-u")
 def update(update):
-    task_id = int(click.prompt("Enter t_id which you want to modify"))
-    updated_task = click.prompt("Enter new task")
-    dc.update_task(t_id = task_id , task = updated_task)
+    update_task_id = int(click.prompt("Enter task_id which you want to modify"))
+    new_task = click.prompt("Enter new task")
+    dc.update_task(task_id = update_task_id , task = new_task)
 
 @click.command(help = "Delete the task.")
 @click.option("--delete","-d")
 def delete(delete):
-    task_id = int(click.prompt("Enter task_id which you want to delete"))
-    dc.delete_task(t_id = task_id)
+    delete_task_id = int(click.prompt("Enter task_id which you want to delete"))
+    dc.delete_task(task_id = delete_task_id)
     
     
