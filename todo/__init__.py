@@ -5,10 +5,12 @@ from todo.task import show
 from todo.task import update
 from todo.task import delete
 
+
 @click.group()
 def main():
-    ''''Todo Manager'''''
+    """'Todo Manager""" ""
     pass
+
 
 main.add_command(add)
 main.add_command(show)
