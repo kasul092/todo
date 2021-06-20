@@ -25,7 +25,7 @@ class DatabaseConnection:
         table = tabulate(data_for_table, headers=["ID", "Task"], tablefmt="fancy_grid")
         print(table)
 
-    def update_task(self, task_id, task):
+    def update_task(self, task, task_id):
         self.task = task
         self.task_id = task_id
         self.cur.execute(

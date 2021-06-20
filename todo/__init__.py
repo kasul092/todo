@@ -8,7 +8,7 @@ from todo.task import delete
 
 @click.group()
 def main():
-    """'Todo Manager""" ""
+    """""Todo Manager"""""
     pass
 
 
