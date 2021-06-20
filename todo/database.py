@@ -17,7 +17,7 @@ class DatabaseConnection:
 
     def add_task(self, task):
         self.task = task
-        global date
+        global c_date
         start = datetime.datetime.now()
         time = start.strftime("%H:%M:%S")
         self.cur.execute("""INSERT INTO myroutine(task, date, time) VALUES(?, ?, ?)""", (self.task, c_date, time),)
@@ -33,7 +33,7 @@ class DatabaseConnection:
     def update_task(self, task, task_id):
         self.task = task
         self.task_id = task_id
-        global date
+        global c_date
         start = datetime.datetime.now()
         time = start.strftime("%H:%M:%S")
         self.cur.execute(
