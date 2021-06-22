@@ -119,9 +119,9 @@ ToDo is installed using setup.py file:
 
 
 ************************************************************************
-`Licence <https://github.com/kasul092/todo/blob/main/LICENSE>`_
+ToDo - Command line tool is licensed under [MIT License](https://github.com/kasul092/todo/blob/main/LICENSE)
+
 ************************************************************************
-ToDo - Command line tool is licensed under `MIT License  <https://github.com/kasul092/todo/blob/main/LICENSE>`_
 
 
 
