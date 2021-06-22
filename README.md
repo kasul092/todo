@@ -1,21 +1,22 @@
-**************************
-ToDo - Command Line Tool
-**************************
 
-.. class:: no-web no-pdf
-
-|Python| |Licence| |Build Status| |docs passing|
+# ToDo - Command Line Tool
 
 
-.. image::https://user-images.githubusercontent.com/82323267/122764927-9a0b0f00-d2bd-11eb-92ac-3c0ffe135605.png
+![alt text][Python]  ![alt text][license]
 
 
-Introduction
+![alt text][logo]
+
+[logo]:https://user-images.githubusercontent.com/82323267/122858938-ca43c380-d338-11eb-9802-81d76120c46b.png
+
+
+
+## Introduction
 ************
 ToDo is command line task manager. It is a command line utility to add, delete, update and display the tasks. It is a powerful task manager written in Python. It uses SQLite3 database to store the tasks.
 
 
-Features
+## Features
 ********
 * Add one Task at one time
 * Display all Tasks in table format
@@ -25,28 +26,26 @@ Features
 * It uses offline
 
 
-Dependencies
+## Dependencies
 ************
-=============================================      ==================
-     Features                                       Dependancy
-=============================================      ==================
-``Scripting Language``                              Python 3.0+
-``Command-Line Option and argument parsing``        click
-``Database Used``                                   SQLite3
-``Display Bookmarks in Table``                      tabulate
-=============================================      ==================
+| Features | Dependancy|
+|---|---|
+|``Scripting Language`` | Python 3.0+
+| ``Command-Line Option and argument parsing`` | click
+``Database Used`` | SQLite3
+ ``Display Bookmarks in Table``   | tabulate |
 
-Installation
+
+## Installation
 ************
 ToDo is installed using setup.py file:
 
-.. code-block:: bash
+
 
     python setup.py install
 
-Command line options
-********************
-.. code-block:: bash
+## Command line options
+*********************
 
     Usage: ToDo [OPTIONS] [INSERT]...
 
@@ -57,73 +56,79 @@ Command line options
     -d, --delete TEXT       Remove a Task of particular ID
     -u, --update TEXT...    Update a Task for specific ID
     -s, --show TEXT...      Show all Tasks
-    --help                  Show this message and exit.
+    --help                  Show thismessage and exit.
 
 
-Examples
+## Examples
 ********
-1. **Add** the Tasks:
+### 1. **Add** the Tasks:
 
-.. code-block:: bash
 
-    $ todo add --add "task" ...
-    or
+     $ todo add --add "task" ...
+     
+     or
+     
     $ todo add -a "task" ...
 
-2. **Show** all added tasks:
 
-.. code-block:: bash
 
-    $ todo -s
-    or
-    $ todo --show
+### 2. **Show** all added tasks:
 
-3. **Update** a task using its ID:
 
-.. code-block:: bash
+     $ todo -s
+  
+      or
+     
+     $ todo --show
+
+### 3. **Update** a task using its ID:
+
+
 
     $ todo update
 
-4. **Delete** todo delete ID:
-
-.. code-block:: bash
+### 4. **Delete** todo delete ID:
 
     $ todo delete
 
-How to install source code for development
+## How to install source code for development
 **********************************************
 * Clone project from github:
 
-.. code-block:: bash
 
-    $ git clone https://github.com/kasul092/todo.git
+
+      $ git clone https://github.com/kasul092/todo.git
 
 * We recommend to create and activate a virtualenv first:
 
-.. code-block:: bash
+   
 
-    $ cd todo/
+       $ cd todo/
 
-    $ py -m virtualenv env
+      $ py -m virtualenv env
 
-    $ env/Scripts/activate
+      $ env/Scripts/activate
 
-    (env) $
+      (env) $
 
 * To install using setup.py file:
 
-.. code-block:: bash
 
-        (env) $ python setup.py install
+
+       (env) $ python setup.py install
 
 
 ************************************************************************
 `Licence <https://github.com/kasul092/todo/blob/main/LICENSE>`_
 ************************************************************************
-ToDo - Command line tool is licensed under `GNU General Public License v3.0. <https://github.com/kasul092/todo/blob/main/LICENSE>`_
+ToDo - Command line tool is licensed under `MIT License  <https://github.com/kasul092/todo/blob/main/LICENSE>`_
 
-.. |Python| image:: https://img.shields.io/badge/python-3.6-blue.svg
 
-.. |Licence| image:: https://img.shields.io/badge/license-MIT-yellow.svg?maxAge=2592000
-    :target: https://github.com/projectreadit/readit/blob/master/LICENSE
+
+[Python]:https://img.shields.io/badge/python-3.6-blue.svg
+
+
+
+[license]:https://img.shields.io/badge/license-MIT-yellow.svg?maxAge=2592000
+
 
