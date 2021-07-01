@@ -92,7 +92,7 @@ ToDo is installed using setup.py file:
     $ todo delete
 
 ## How to install source code for development
-**********************************************
+
 * Clone project from github:
 
 
@@ -118,10 +118,10 @@ ToDo is installed using setup.py file:
        (env) $ python setup.py install
 
 
-************************************************************************
+
 ToDo - Command line tool is licensed under [MIT License](https://github.com/kasul092/todo/blob/main/LICENSE)
 
-************************************************************************
+
 
 
 
