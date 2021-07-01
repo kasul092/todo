@@ -30,10 +30,10 @@ ToDo is command line task manager. It is a command line utility to add, delete, 
 
 | Features | Dependancy |
 |---|---|
-|``Scripting Language`` | Python 3.0+
+| ``Scripting Language`` | Python 3.0+
 | ``Command-Line Option and argument parsing`` | click
-|``Database Used`` | SQLite3 
-| ``Display Bookmarks in Table``   | tabulate |
+| ``Database Used`` | SQLite3
+| ``Display Bookmarks in Table`` | tabulate |
 
 
 ## Installation
