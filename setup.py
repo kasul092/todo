@@ -4,7 +4,7 @@ with open("README.md") as readme_file:
     readme = readme_file.read()
 
 setup(
-    name = "ToDo Task Manager Tool",
+    name = "mytask",
     version = "0.1.0",
     description = "Todo manager tool",
     long_description = readme,
