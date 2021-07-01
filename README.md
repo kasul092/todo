@@ -12,12 +12,12 @@
 
 
 ## Introduction
-************
+
 ToDo is command line task manager. It is a command line utility to add, delete, update and display the tasks. It is a powerful task manager written in Python. It uses SQLite3 database to store the tasks.
 
 
 ## Features
-********
+
 * Add one Task at one time
 * Display all Tasks in table format
 * Remove a Task with specific ID
@@ -27,17 +27,17 @@ ToDo is command line task manager. It is a command line utility to add, delete, 
 
 
 ## Dependencies
-************
-| Features | Dependancy|
+
+| Features | Dependancy |
 |---|---|
-|``Scripting Language`` | Python 3.0+
+| ``Scripting Language`` | Python 3.0+
 | ``Command-Line Option and argument parsing`` | click
-``Database Used`` | SQLite3
- ``Display Bookmarks in Table``   | tabulate |
+| ``Database Used`` | SQLite3
+| ``Display Bookmarks in Table`` | tabulate |
 
 
 ## Installation
-************
+
 ToDo is installed using setup.py file:
 
 
@@ -45,7 +45,7 @@ ToDo is installed using setup.py file:
     python setup.py install
 
 ## Command line options
-*********************
+
 
     Usage: ToDo [OPTIONS] [INSERT]...
 
@@ -60,7 +60,7 @@ ToDo is installed using setup.py file:
 
 
 ## Examples
-********
+
 ### 1. **Add** the Tasks:
 
 
@@ -92,7 +92,7 @@ ToDo is installed using setup.py file:
     $ todo delete
 
 ## How to install source code for development
-**********************************************
+
 * Clone project from github:
 
 
@@ -118,10 +118,10 @@ ToDo is installed using setup.py file:
        (env) $ python setup.py install
 
 
-************************************************************************
+
 ToDo - Command line tool is licensed under [MIT License](https://github.com/kasul092/todo/blob/main/LICENSE)
 
-************************************************************************
+
 
 
 
