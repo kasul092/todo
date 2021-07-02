@@ -7,8 +7,7 @@
 
 ![alt text][logo]
 
-[logo]:https://user-images.githubusercontent.com/82323267/122858938-ca43c380-d338-11eb-9802-81d76120c46b.png
-
+[logo]:https://user-images.githubusercontent.com/82323267/124240926-e31e5700-db38-11eb-9125-26ed3b21442b.png
 
 
 ## Introduction
@@ -87,7 +86,7 @@ MyTask is installed using setup.py file:
 
     $ mytask update
 
-### 4. **Delete** todo delete ID:
+### 4. **Delete** a task using its ID:
 
     $ mytask delete
 
