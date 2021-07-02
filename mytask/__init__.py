@@ -1,14 +1,14 @@
 import click
 
-from todo.task import add
-from todo.task import show
-from todo.task import update
-from todo.task import delete
+from mytask.task import add
+from mytask.task import show
+from mytask.task import update
+from mytask.task import delete
 
 
 @click.group()
 def main():
-    """""Todo Manager"""""
+    """""MyTask Manager"""""
     pass
 
 
