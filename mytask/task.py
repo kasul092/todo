@@ -1,6 +1,6 @@
 import click
 
-from todo.database import DatabaseConnection
+from mytask.database import DatabaseConnection
 
 dc = DatabaseConnection()
 

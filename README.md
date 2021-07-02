@@ -1,5 +1,5 @@
 
-# ToDo - Command Line Tool
+# MyTask - Command Line Tool
 
 
 ![alt text][Python]  ![alt text][license]
@@ -13,7 +13,7 @@
 
 ## Introduction
 
-ToDo is command line task manager. It is a command line utility to add, delete, update and display the tasks. It is a powerful task manager written in Python. It uses SQLite3 database to store the tasks.
+MyTask is command line task manager. It is a command line utility to add, delete, update and display the tasks. It is a powerful task manager written in Python. It uses SQLite3 database to store the tasks.
 
 
 ## Features
@@ -38,7 +38,7 @@ ToDo is command line task manager. It is a command line utility to add, delete, 
 
 ## Installation
 
-ToDo is installed using setup.py file:
+MyTask is installed using setup.py file:
 
 
 
@@ -47,9 +47,9 @@ ToDo is installed using setup.py file:
 ## Command line options
 
 
-    Usage: ToDo [OPTIONS] [INSERT]...
+    Usage: MyTask [OPTIONS] [INSERT]...
 
-      ToDo - Command-line Task manager tool.
+      MyTask - Command-line Task manager tool.
 
     Options:
     -a, --add TEXT...       Add the Task 
@@ -64,32 +64,32 @@ ToDo is installed using setup.py file:
 ### 1. **Add** the Tasks:
 
 
-     $ todo add --add "task" ...
+     $ mytask add --add "task" ...
      
      or
      
-    $ todo add -a "task" ...
+    $ mytask add -a "task" ...
 
 
 
 ### 2. **Show** all added tasks:
 
 
-     $ todo -s
+     $ mytask -s
   
       or
      
-     $ todo --show
+     $ mytask --show
 
 ### 3. **Update** a task using its ID:
 
 
 
-    $ todo update
+    $ mytask update
 
 ### 4. **Delete** todo delete ID:
 
-    $ todo delete
+    $ mytask delete
 
 ## How to install source code for development
 
@@ -103,7 +103,7 @@ ToDo is installed using setup.py file:
 
    
 
-       $ cd todo/
+       $ cd mytask/
 
       $ py -m virtualenv env
 
@@ -119,7 +119,7 @@ ToDo is installed using setup.py file:
 
 
 
-ToDo - Command line tool is licensed under [MIT License](https://github.com/kasul092/todo/blob/main/LICENSE)
+MyTask - Command line tool is licensed under [MIT License](https://github.com/kasul092/todo/blob/main/LICENSE)
 
 
 
