@@ -56,3 +56,15 @@ class DatabaseConnection:
         )
         self.conn.commit()
         print("Task deleted successfully.")
+
+    def sort_task(self, date):
+        self.date = date
+        self.cur.execute("""SELECT date,
+                            task
+                            FROM myroutine
+                            ORDER BY date""",
+                            (date,),
+                        )
+        sort = self.cur.fetchall()
+        print(tabulate(sort, headers=["Task"], tablefmt="fancy_grid"))
+        

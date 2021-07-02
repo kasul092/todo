@@ -35,3 +35,10 @@ def update(update):
 def delete(delete):
     delete_task_id = int(click.prompt("Enter task_id which you want to delete"))
     dc.delete_task(task_id=delete_task_id)
+
+
+@click.command(help="Sort the task.")
+@click.option("--sort", "-o")
+def sort(sort):
+    order_by = click.prompt("Enter date of you want to sort the tasks in yyyy-mm-dd")
+    dc.sort_task(date = order_by)
