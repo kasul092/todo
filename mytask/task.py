@@ -40,5 +40,5 @@ def delete(delete):
 @click.command(help="Sort the task.")
 @click.option("--sort", "-o")
 def sort(sort):
-    order_by = click.prompt("Enter date of you want to sort the tasks in yyyy-mm-dd")
+    order_by = click.prompt("Enter the date to sort the tasks [yyyy-mm-dd]")
     dc.sort_task(date = order_by)
