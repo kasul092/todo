@@ -67,4 +67,4 @@ class DatabaseConnection:
                          (self.date,),   
                         )
         sort = self.cur.fetchall()
-        print(tabulate(sort, headers=["Task"], tablefmt="fancy_grid"))
+        print(tabulate(sort, headers=["date","Task"], tablefmt="fancy_grid"))
