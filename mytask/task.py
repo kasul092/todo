@@ -53,3 +53,8 @@ def status(status):
     status_task_id = int(click.prompt("Enter task_id which you want to labelled"))
     update_status = click.prompt("Please update the status of task [In process/Complete]")
     dc.status_add(task_id = status_task_id, status = update_status)
+
+@click.command(help="Delete all the tasks.")
+@click.option("--clear", "-c")
+def clear(clear):
+    view = dc.clear_task()

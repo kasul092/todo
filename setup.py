@@ -5,7 +5,7 @@ with open("README.md") as readme_file:
 
 setup(
     name = "mytask",
-    version = "0.1.1",
+    version = "0.1.2",
     description = "mytask manager tool",
     long_description = readme,
     long_description_content_type='text/markdown',

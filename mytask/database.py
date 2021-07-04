@@ -81,3 +81,10 @@ class DatabaseConnection:
                             (self.status,self.task_id),)
         self.conn.commit()
         print("Status added successfully")
+
+    def clear_task(self):
+        self.cur.execute(
+            """DELETE FROM myroutine""")
+        self.conn.commit()
+        print("Tasks deleted successfully.")
+
