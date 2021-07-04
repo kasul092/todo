@@ -5,6 +5,7 @@ from mytask.task import show
 from mytask.task import update
 from mytask.task import delete
 from mytask.task import sort
+from mytask.task import tag
 
 
 @click.group()
@@ -18,6 +19,7 @@ main.add_command(show)
 main.add_command(update)
 main.add_command(delete)
 main.add_command(sort)
+main.add_command(tag)
 
 if __name__ == "__main__":
 

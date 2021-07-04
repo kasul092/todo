@@ -42,3 +42,10 @@ def delete(delete):
 def sort(sort):
     order_by = click.prompt("Enter the date to sort the tasks [yyyy-mm-dd]")
     dc.sort_task(date = order_by)
+
+@click.command(help="Provide tag to the task.")
+@click.option("--tag", "-t")
+def tag(tag):
+    tag_task_id = int(click.prompt("Enter task_id which you want to labelled"))
+    tags = click.prompt("Could you complete the task [complete/In process]?")
+    dc.tag_add(task_id = tag_task_id, tag = tags)
