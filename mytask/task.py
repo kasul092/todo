@@ -10,8 +10,7 @@ c_date = datetime.date.today()
 @click.option("--add", "-a")
 def add(add):
     default_status = 'Todo'
-    d = int(click.prompt("How many days will you complete the task?"))
-    d_date = c_date + datetime.timedelta(days= d)
+    d_date = c_date + datetime.timedelta(days= 5)
     if add:
         task_added = dc.add_task(add, status = default_status, deadline = d_date)
         if task_added:
