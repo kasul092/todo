@@ -1,16 +1,19 @@
 import click
+import datetime
 
 from mytask.database import DatabaseConnection
 
 dc = DatabaseConnection()
-
+c_date = datetime.date.today()
 
 @click.command(help="Add the task.")
 @click.option("--add", "-a")
 def add(add):
     default_status = 'Todo'
+    d = int(click.prompt("How many days will you complete the task?"))
+    d_date = c_date + datetime.timedelta(days= d)
     if add:
-        task_added = dc.add_task(add, status = default_status)
+        task_added = dc.add_task(add, status = default_status, deadline = d_date)
         if task_added:
             print("Task added successfully.")
     else:
