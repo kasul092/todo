@@ -8,8 +8,9 @@ dc = DatabaseConnection()
 @click.command(help="Add the task.")
 @click.option("--add", "-a")
 def add(add):
+    default_status = 'Todo'
     if add:
-        task_added = dc.add_task(add)
+        task_added = dc.add_task(add, status = default_status)
         if task_added:
             print("Task added successfully.")
     else:
@@ -44,8 +45,8 @@ def sort(sort):
     dc.sort_task(date = order_by)
 
 @click.command(help="Provide tag to the task.")
-@click.option("--tag", "-t")
-def tag(tag):
-    tag_task_id = int(click.prompt("Enter task_id which you want to labelled"))
-    tags = click.prompt("Could you complete the task [complete/In process]?")
-    dc.tag_add(task_id = tag_task_id, tag = tags)
+@click.option("--status", "-st")
+def status(status):
+    status_task_id = int(click.prompt("Enter task_id which you want to labelled"))
+    update_status = click.prompt("Please update the status of task [In process/Complete]")
+    dc.status_add(task_id = status_task_id, status = update_status)
