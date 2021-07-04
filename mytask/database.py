@@ -11,25 +11,26 @@ class DatabaseConnection:
 
         self.cur.execute(
             """Create table IF NOT EXISTS myroutine
-            (task_id INTEGER primary key AUTOINCREMENT, task TEXT, date TEXT, time TEXT, status TEXT)"""
+            (task_id INTEGER primary key AUTOINCREMENT, task TEXT, date TEXT, time TEXT, status TEXT, deadline TEXT)"""
         )
         self.conn.commit()
 
-    def add_task(self, task, status):
+    def add_task(self, task, status,deadline):
         self.task = task
         self.status = status
+        self.deadline = deadline
         global c_date
         start = datetime.datetime.now()
         time = start.strftime("%H:%M:%S")
-        self.cur.execute("""INSERT INTO myroutine(task, date, time, status) VALUES(?, ?, ?, ?)""",
-                            (self.task, c_date, time, self.status),)
+        self.cur.execute("""INSERT INTO myroutine(task, date, time, status, deadline) VALUES(?, ?, ?, ?, ?)""",
+                            (self.task, c_date, time, self.status, self.deadline),)
         self.conn.commit()
         print("task added successfully.")
 
     def show_task(self):
         self.cur.execute("""SELECT * FROM myroutine""")
         data_for_table = self.cur.fetchall()
-        table = tabulate(data_for_table, headers=["ID", "Task", "Date", "Time", "Status"], tablefmt="fancy_grid")
+        table = tabulate(data_for_table, headers=["ID", "Task", "Date", "Time", "Status", "Deadline"], tablefmt="fancy_grid")
         print(table)
 
     def update_task(self, task, task_id):
