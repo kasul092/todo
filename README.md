@@ -24,6 +24,7 @@ MyTask is command line task manager. It is a command line utility to add, delete
 * Remove all Tasks
 * Update a Task with a specific ID
 * It uses offline
+* Display the version of tool.
 * Auto status of task is Todo. User update it later.
 * User can give a deadline for tasks also.
 * If user won't provide deadline it auto takes deadline of 5 days. 
@@ -63,6 +64,7 @@ MyTask is installed using setup.py file:
     -c, --clear TEXT...     Clear all the tasks present in table
     -st, --status TEXT...   Provide a status to the task
     -o, --sort TEXT...      Sort the task by date
+    -v, --version TEXT...   Show the version of mytask command line tool
     --help                  Show this message and exit.
 
 
@@ -103,6 +105,10 @@ MyTask is installed using setup.py file:
 ### 7. **Status** provide the status of task:
 
     $ mytask status
+
+### 8. **Version** provide the version of mytask command line tool:
+
+    $ mytask version
 
 
 ## How to install source code for development
