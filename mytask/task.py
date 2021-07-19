@@ -58,3 +58,8 @@ def status(status):
 @click.option("--clear", "-c")
 def clear(clear):
     view = dc.clear_task()
+
+@click.command(help="Show the version of tool.")
+@click.option("--version", "-v")
+def version(version):
+    print("mytask v0.1.2")

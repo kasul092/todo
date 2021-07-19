@@ -7,6 +7,7 @@ from mytask.task import delete
 from mytask.task import sort
 from mytask.task import status
 from mytask.task import clear
+from mytask.task import version
 
 
 @click.group()
@@ -22,6 +23,7 @@ main.add_command(delete)
 main.add_command(sort)
 main.add_command(status)
 main.add_command(clear)
+main.add_command(version)
 
 if __name__ == "__main__":
 
